@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>贺凯 · Kai He</title>
+    <meta
+      name="description"
+      content="贺凯，中山大学土木工程学院副教授、博士生导师，研究光谱质谱检测、水污染溯源与环境监测仪器研发。"
+    />
+    <meta name="theme-color" content="#1b150e" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B8%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <div id="stage" class="stage">
+      <canvas id="scene" class="scene" aria-hidden="true"></canvas>
+
+      <header class="masthead">
+        <h1 class="masthead__name">贺<span class="masthead__gap"></span>凯</h1>
+        <p class="masthead__latin">Kai He</p>
+        <p class="masthead__role">中山大学土木工程学院 · 副教授 · 博士生导师</p>
+      </header>
+
+      <nav id="links" class="links" aria-label="主页链接"></nav>
+
+      <footer class="foot">
+        <a class="foot__mail" href="mailto:hekai7@mail.sysu.edu.cn">hekai7@mail.sysu.edu.cn</a>
+        <span class="foot__hint" id="hint">悬停枝头 · 点击进入</span>
+      </footer>
+    </div>
+
+    <div id="scrim" class="scrim" hidden></div>
+    <aside id="panel" class="panel" role="dialog" aria-modal="true" aria-labelledby="panel-title" hidden>
+      <div class="panel__inner">
+        <button class="panel__close" id="panel-close" type="button" aria-label="关闭">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+          </svg>
+        </button>
+        <nav class="panel__tabs" id="panel-tabs" aria-label="栏目"></nav>
+        <div class="panel__body" id="panel-body"></div>
+      </div>
+    </aside>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
